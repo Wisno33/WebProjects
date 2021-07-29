@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../css/mySite.css">
+	<title>Create an Account</title>
+</head>
+<body class="account">
+	<header>
+		<h1>Create an Account</h1>
+	</header>
+	<main>
+		<div>
+			<form action="https://unfinishedbusiness.app/alert.php" method="post">
+				<fieldset>
+					<legend>Basic Information</legend>
+					<div>
+						<label for="firstN">First Name</label>
+						<input type="text" name="firstN" id="firstN" required>
+					</div>
+					<div>
+						<label for="lastN">Last Name</label>
+						<input type="text" name="lastN" id="lastN" required>
+					</div>
+					<div>
+						<label for="emailA">Email Address</label>
+						<input type="email" name="emailAdd" id="emailN" required>
+					</div>
+					<div>
+						<label for="bDate">Birth Date</label>
+						<input type="date" name="bDate" id="bDate" value="2015-10-21" min="1970-01-01" max="2025-12-31">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Professional and Education Information</legend>
+					<div>
+						<p>
+							Select your major:
+						</p>
+						<div>
+							<label class="containerR" for="CS"><a href="https://www.unf.edu/ccec/computing/Computer_Science_Program.aspx" target="_blank">Computer Science</a>
+								<input type="radio" name="major" value="Computer Science" id="CS">
+								<span class="checkmarkR"></span>
+							</label>
+						</div>
+						<div>
+							<label class="containerR" for="IS"><a href="https://www.unf.edu/ccec/computing/Information_Science_Program.aspx" target="_blank">Information Science</a>
+								<input type="radio" name="major" value="Information Science" id="IS">
+								<span class="checkmarkR"></span>
+							</label>
+						</div>
+						<div>
+							<label class="containerR" for="ISY"><a href="https://www.unf.edu/ccec/computing/Information_Systems_Program.aspx" target="_blank">Information Systems</a>
+								<input type="radio" name="major" value="Information Systems" id="ISY">
+								<span class="checkmarkR"></span>
+							</label>
+						</div>
+						<div>
+							<label class="containerR" for="IT"><a href="https://www.unf.edu/ccec/computing/Information_Technology_Program.aspx" target="_blank">Information Technology</a>
+								<input type="radio" name="major" value="Information Technology" id="IT">
+								<span class="checkmarkR"></span>
+							</label>
+						</div>
+					</div>
+					<div>
+						<p>
+							Programing Language Experience:
+						</p>
+						<table>
+							<tr>
+								<td>
+									<label class="containerC">
+											<input type="checkbox" name="C" id="C">
+											<a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">C</a>
+											&nbsp;
+											<span class="checkmarkC"></span>
+									</label>
+								</td>
+								<td>
+									<label class="containerC">
+										<input type="checkbox" name="PHP" id="PHP"><a href="https://en.wikipedia.org/wiki/PHP" target="_blank">PHP</a>&nbsp;
+										<span class="checkmarkC"></span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="containerC">
+										<input type="checkbox" name="Csharp" id="Csharp">
+										<a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" target="_blank">C#</a>&nbsp;
+										<span class="checkmarkC"></span>
+									</label>
+								</td>
+								<td>
+									<label class="containerC">
+										<input type="checkbox" name="python" id="python">
+										<a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Python</a>
+										&nbsp;
+										<span class="checkmarkC"></span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="containerC">
+										<input type="checkbox" name="java" id="java"><a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank">Java</a>&nbsp;
+										<span class="checkmarkC"></span>
+									</label>
+								</td>
+								<td>
+									<label class="containerC">
+										<input type="checkbox" name="vbasic" id="vbasic"><a href="https://en.wikipedia.org/wiki/Visual_Basic" target="_blank">Visual Basic</a>&nbsp;
+										<span class="checkmarkC"></span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="containerC">
+										<input type="checkbox" name="javaScript" id="javaScript"><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>&nbsp;
+										<span class="checkmarkC"></span>
+									</label>
+								</td>
+								<td>
+									<label class="containerC">
+										<input type="checkbox" name="other" id="other">Other&nbsp;
+										<span class="checkmarkC"></span>
+									</label>
+
+								</td>
+							</tr>
+						</table>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Password</legend>
+					<p>
+						<label for="pass">Password</label>
+						<input type="password" name="pass" id="pass" required>
+					</p>
+					<p>
+						<label for="passCon">Confirm Password</label>
+						<input type="password" name="passCon" id="passCon" required>
+					</p>
+				</fieldset>
+				<div>
+					<button type="submit">Submit</button>
+					<button type="reset">Reset</button>
+				</div>
+				<input type="hidden" name="username" value="779115500" />
+				<input type="hidden" name="to_email_address" value="n01153911@unf.edu" />
+				<input type="hidden" name="to_display_name" value="David Wisnosky" />
+			</form>
+		</div>
+	</main>
+	<footer>
+		<nav>
+			<a href="index.html" target="_self">Personal</a>
+			<a href="../index.html" target="_self">ePortfolio</a>
+		</nav>
+	</footer>
+</body>
+</html>

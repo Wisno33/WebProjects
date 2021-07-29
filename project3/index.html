@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/mySite.css">
+	<script type="text/javascript" src="script.js"></script>
+	<title>Stats Stat!</title>
+</head>
+<body>
+	<div>
+		<h2>Statistical Calculator</h2>
+	</div>
+	<div>
+		<form onSubmit="return preformStatistics()">
+			<fieldset>
+				<label for="userInput">
+					Your Numbers:
+				</label>
+				<textarea name="userInput" id="userInput" rows="5" cols="30" placeholder="Enter some numbers for calculations to be preformed! (Numbers should be separated by a space with no leading or ending space, have fun!)"></textarea>
+			</fieldset>
+			<fieldset>
+				 <button type="submit">Submit</button>
+				 <button type="reset">Reset</button>
+			</fieldset>
+			<fieldset>
+				<legend>
+					Your Statistics!
+				</legend>
+				<label for="maxValue">
+					Maximum Value
+				</label>
+				<input type="text" name="maxValue" id="maxValue" readonly>
+				<label for="minValue">
+					Minimum Value
+				</label>
+				<input type="text" name="minValue" id="minValue" readonly>
+				<label for="sumValues">
+					Sum
+				</label>
+				<input type="text" name="sumValues" id="sumValues" readonly>
+				<label for="mean">
+					Mean
+				</label>
+				<input type="text" name="mean" id="mean" readonly>
+				<label for="median">
+					Median
+				</label>
+				<input type="text" name="median" id="median" readonly>
+				<label for="mode">
+					Mode
+				</label>
+				<input type="text" name="mode" id="mode" readonly>
+				<label for="stdDev">
+					Standard Deviation
+				</label>
+				<input type="text" name="stdDev" id="stdDev" readonly>
+				<label for="variance">
+					Variance
+				</label>
+				<input type="text" name="variance" id="variance" readonly>
+			</fieldset>
+		</form>
+	</div>
+</body>
+<footer>
+	<nav>
+		<a href="../index.html" target="_self">ePortfolio</a>
+	</nav>
+</footer>
+</html>

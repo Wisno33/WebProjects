@@ -1,0 +1,184 @@
+@import "default.css";
+/* DO NOT MODIFY THE @import STATEMENT ABOVE */
+
+/* You will use this CSS file for each of your projects. Simply add new CSS classes and elements to the end of the file. */
+
+/* Be careful to keep your selector names unique to avoid collisions, which can cause confusion. */
+
+/* Styling for index.html */
+.indexh2A {
+	color: blue;
+}
+
+.indexh2B {
+	color: green;
+}
+
+.indexh2C {
+	color: red;
+}
+
+.indexDip{
+	font-style: italic;
+}
+
+.indexDeg{
+	font-weight: bold;
+}
+
+.index a:hover{
+	font-size: 150%;
+}
+
+/* Styling for schedule.html */
+
+.schedule table{
+	text-align: center;
+}
+
+.schedule th{
+	color: blue;
+}
+
+.scheduletrA{
+	color: green;
+}
+
+.scheduletrB{
+	color: red;
+}
+
+.schedule ol{
+	list-style-type: Arabic;
+}
+
+.schedule ol ol{
+	list-style-type: upper-alpha;
+}
+
+
+/* Styling for account.html */
+/* Radio styling */
+.containerR {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.containerR input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmarkR {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.containerR input ~ .checkmarkR {
+  background-color: grey;
+}
+
+.containerR input:checked ~ .checkmarkR {
+  background-color: green;
+}
+
+.checkmarkR:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.containerR input:checked ~ .checkmarkR:after {
+  display: block;
+}
+
+.containerR .checkmarkR:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+} 
+
+/* Checkbox styling */
+
+.containerC {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.containerC input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmarkC {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.containerC input ~ .checkmarkC {
+  background-color: grey;
+}
+
+.containerC input:checked ~ .checkmarkC {
+  background-color: blue;
+}
+
+.checkmarkC:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.containerC input:checked ~ .checkmarkC:after {
+  display: block;
+}
+
+.containerC .checkmarkC:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} 
+
+
+
+
+

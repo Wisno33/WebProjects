@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>myMovies Xpress! - Search Results</title>
+		<link rel="stylesheet" type="text/css" href="../css/mySite.css" />
+		<script src="./script.js"></script>
+	</head>
+	<body>
+		<h3>Welcome, <?= $_SESSION["displayName"] ?> (<a href="javascript: confirmLogout()">logout</a>)</h3>
+		<h1>myMovies Xpress!</h1>
+<!-- DO NOT REMOVE OR MODIFY THE CODE OR PLACE YOUR CODE ABOVE THIS LINE -->
+		<?php
+		if(isset($_SESSION['results']))
+			$numResults = sizeof($_SESSION['results']);
+		else
+			$numResults = 0;
+
+		echo "$numResults movies found for the keyword: {$_SESSION['keyword']}";
+
+		if($numResults != 0){
+			echo '<table>';
+				echo '<tr>';
+					echo '<th>Poster</th>';
+					echo '<th>Title (Year)</th>';
+					echo '<th>Add Movie</th>';
+				echo '</tr>';
+
+				foreach($_SESSION['results'] as $movieData){
+					echo '<tr>';
+						echo '<td><img src="' . $movieData['Poster'] . '" height="100"></td>';
+						echo '<td><a href="https://www.imdb.com/title/' . $movieData['imdbID'] . '" target="_blank">' . $movieData['Title'] . ' (' . $movieData['Year'] . ')</a></td>';
+						echo '<td><a href="javascript: addMovie(\'' . $movieData['imdbID'] . '\')">+</a></td>';
+					echo '</tr>';
+				}
+			echo '</table>';
+		}
+		?>
+		<div>
+			<input type="button" value="Cancel" onclick="javascript: confirmCancel()"/>
+		</div>
+<!-- DO NOT REMOVE OR MODIFY THE CODE OR PLACE YOUR CODE BELOW THIS LINE -->
+	</body>
+</html>
